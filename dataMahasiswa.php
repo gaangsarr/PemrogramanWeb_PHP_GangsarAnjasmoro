@@ -18,7 +18,7 @@ $result = mysqli_query($conn, $query);
     <h2 class="judul">Daftar Data Mahasiswa</h2>
 
     <div class="top-action">
-      <a href="index.html">+ Tambah Data Baru</a>
+      <a href="index.php">+ Tambah Data Baru</a>
       <span class="info-text">Menampilkan data dari tabel <b>formulir</b>.</span>
     </div>
 
