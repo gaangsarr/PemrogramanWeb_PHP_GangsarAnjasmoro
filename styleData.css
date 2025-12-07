@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #3291b6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 900px;
+  padding: 30px 30px 25px;
+}
+
+.judul {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #3291b6;
+}
+
+.top-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.top-action a {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #3291b6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.top-action a:hover {
+  background-color: #266b87ff;
+}
+
+.info-text {
+  font-size: 13px;
+  color: #666;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e2e2e2;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+thead {
+  background-color: #3291b6;
+  color: #ffffff;
+}
+
+th,
+td {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+th {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7f7ff;
+}
+
+tbody tr:hover {
+  background-color: #e9ecff;
+}
+
+.cardForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardForm label {
+  font-weight: 600;
+  color: #555;
+  font-size: 14px;
+}
+
+.cardForm input[type="text"],
+.cardForm select,
+.cardForm textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #fafafa;
+}
+
+.cardForm input[type="text"]:focus,
+.cardForm select:focus,
+.cardForm textarea:focus {
+  outline: none;
+  border-color: #3291b6;
+  background-color: white;
+}
+
+.cardForm input[type="text"]::placeholder,
+.cardForm textarea::placeholder {
+  color: #aaa;
+}
+
+button[type="submit"] {
+  background-color: #3291b6;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #266b87ff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .judul {
+    font-size: 20px;
+  }
+
+  .info-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 18px;
+  }
+
+  table {
+    min-width: 500px;
+  }
+}

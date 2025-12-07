@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #3291b6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+}
+
+.judul {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #3291b6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardForm label {
+  font-weight: 600;
+  color: #555;
+  font-size: 14px;
+}
+
+.cardForm input[type="text"],
+.cardForm select,
+.cardForm textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #fafafa;
+}
+
+.cardForm input[type="text"]:focus,
+.cardForm select:focus,
+.cardForm textarea:focus {
+  outline: none;
+  border-color: #3291b6;
+  background-color: white;
+}
+
+.cardForm input[type="text"]::placeholder,
+.cardForm textarea::placeholder {
+  color: #aaa;
+}
+
+.cardForm select {
+  cursor: pointer;
+}
+
+.cardForm select option {
+  padding: 10px;
+}
+
+.cardForm textarea {
+  min-height: 100px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.radio-group {
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.radio-group label:first-child {
+  margin-bottom: 10px;
+}
+
+.radio-group label:not(:first-child) {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 8px;
+  font-weight: normal;
+  cursor: pointer;
+  color: #666;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 8px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+button[type="submit"] {
+  background-color: #3291b6;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #266b87ff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+  }
+
+  .judul {
+    font-size: 22px;
+  }
+
+  .radio-group label:not(:first-child) {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .judul {
+    font-size: 20px;
+  }
+}
